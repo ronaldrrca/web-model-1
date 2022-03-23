@@ -1,0 +1,106 @@
+/*general styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:  
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    color: #ffffff;
+    z-index: 10;
+}
+
+#logo_header{
+    width: 20.4rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#menu_icon{
+    width: 4.4rem;
+}
+
+#representative_phrase{
+    display: none;
+    margin-left: 6rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #ff0000;
+}
+
+#dropDown_menu li{
+    display: inline-block;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+#dropDown_menu li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#dropDown_menu{
+    display: none;
+}
+
+#mobil_menu{
+    display: none;
+    position: absolute;
+    width: 20rem;
+    top: 4.5rem;
+    right: 2.4rem;
+    border-radius: 0.5rem;
+    background-color: #098BBA;
+}
+
+#mobil_menu a{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#mobil_menu li{
+    list-style: none;
+    display: block;
+    border-top: 1px solid #ffffff;
+}
+
+#mobil_menu li:first-child{
+    padding: 1rem;
+    border-top: navajowhite;
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-align: right;
+}
+
+
